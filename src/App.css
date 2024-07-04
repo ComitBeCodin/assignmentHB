@@ -1,0 +1,9 @@
+.app {
+  display: flex;
+}
+
+.content {
+  margin-left: 240px;
+  padding: 20px;
+  flex-grow: 1;
+}
