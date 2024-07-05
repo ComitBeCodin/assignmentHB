@@ -1,15 +1,17 @@
 import React from 'react';
 import './Sidebar.css';
+import { Link, NavLink } from 'react-router-dom';
 
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="logo">
-        <img src= "https://via.placeholder.com/150" alt="HowBee Logo" />
+        <img src= "./pasted_graphic_1.png" alt="HowBee Logo" />
       </div>
       <div className="sidebar-menu">
         <ul>
+        
           <li><i className="fas fa-tachometer-alt"></i> Dashboard</li>
           <li><i className="fas fa-running"></i> Posture Routine</li>
           <li><i className="fas fa-chalkboard-teacher"></i> Classroom</li>
@@ -20,7 +22,7 @@ const Sidebar = () => {
           <li><i className="fas fa-cog"></i> Settings</li>
         </ul>
       </div>
-      <div>
+      <div id='nepal'>
         <div className="footer-menu">
           <i className="fas fa-question-circle"></i> Help and Support
         </div>

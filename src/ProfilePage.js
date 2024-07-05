@@ -3,7 +3,7 @@ import './ProfilePage.css';
 
 const ProfilePage = () => {
   return (
-    <div className="profile-page">
+    <div>
       
       <form className="profile-form">
         <div className="left-section">
@@ -19,13 +19,14 @@ const ProfilePage = () => {
           <div className="form-row">
             <div>
               <label htmlFor="gender">Gender</label>
-              <select id="gender" name="gender" defaultValue="Mehrab" style={{backgroundColor:"lightgray",height:"69.19px",width:"17vw"}}>
-                <option value="Mehrab">Mehrab</option>
+              <select id="gender" name="gender" defaultValue="Select" style={{backgroundColor:"lightgray",height:"47.19px",width:"255px"}}>
+                <option value="Male">Male</option>
+                <option value="female">Female</option>
               </select>
             </div>
             <div>
               <label htmlFor="dob">DOB</label>
-              <input className="momo" type="text" id="dob" name="dob" defaultValue="Bozorgi" />
+              <input className="momo" type="date" id="dob" name="dob" defaultValue="" />
             </div>
           </div>
 
@@ -50,15 +51,27 @@ const ProfilePage = () => {
 
         <div className="right-section">
         <div className="profile-header">
-        <img src="https://via.placeholder.com/300x300" alt="Profile" />
+        <img src="./pasted_graphic.png" alt="Profile" id='profpic' />
         <h2>Profile</h2>
       </div>
           <label htmlFor="about">About</label>
           <textarea id="about" name="about" rows="5">
             Mehrab Bozorgi
           </textarea>
+          
+          <label htmlFor="pricing">Pricing</label>
+          <p id="pricing" name="pricing" rows="5">
 
-          <div className="pricing">
+          <ul>
+              <li>Thrice a week: $___</li>
+              <li>Twice a week: $___</li>
+              <li>Monday to Friday: $___</li>
+              <li>Elderly Batch: $___</li>
+            </ul>
+          </p>
+        
+
+          {/* <div className="pricing">
             <h3>Pricing</h3>
             <ul>
               <li>Thrice a week: $___</li>
@@ -66,7 +79,7 @@ const ProfilePage = () => {
               <li>Monday to Friday: $___</li>
               <li>Elderly Batch: $___</li>
             </ul>
-          </div>
+          </div> */}
         </div>
 
       

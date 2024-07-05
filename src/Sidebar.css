@@ -1,5 +1,5 @@
 .sidebar {
-    height: 100vh;
+    height: 98vh;
     width: 240px;
     position: fixed;
     top: 0;
@@ -17,7 +17,7 @@
   }
   
   .logo img {
-    width: 50%;
+    width: 80%;
     height: auto;
   }
   
@@ -62,3 +62,11 @@
     margin-right: 10px;
   }
   
+  *{
+    font-family: "Comfortaa", sans-serif;
+
+  }
+
+#nepal{
+  margin-bottom: 30px;
+}
