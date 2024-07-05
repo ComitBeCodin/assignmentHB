@@ -61,13 +61,22 @@ const ProfilePage = () => {
           
           <label htmlFor="pricing">Pricing</label>
           <p id="pricing" name="pricing" rows="5">
+            <div id='wrapper'>
+              <div className='pricing_spacing1'>
+                Thrice a week : <br/>
+                Twice a week : <br/>
+                Monday to Friday :<br/>
+                Elderly Batch : <br/>
 
-          <ul>
-              <li>Thrice a week: $___</li>
-              <li>Twice a week: $___</li>
-              <li>Monday to Friday: $___</li>
-              <li>Elderly Batch: $___</li>
-            </ul>
+              </div>
+              <div className='pricing_spacing2'>
+                <span></span>60$ <br/> 
+                <span></span>50$ <br/>
+                <span></span>80$ <br/>
+                <span></span>100$<br/>
+                
+              </div>
+            </div>
           </p>
         
 
